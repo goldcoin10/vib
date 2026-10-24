@@ -26,7 +26,7 @@ def main():
     elif arg == "--def-rc":
         Path(vibrc).touch()
         file = open(vibrc, "w")
-        file.write('# this is a Vib config file\n# (:a for alias, :c for config)\n:a "https://wikipedia.org/" wiki\n')
+        file.write('# this is a Vib config file\n# (:a for alias, :c for config)\n:a "https://en.wikipedia.org/wiki/" wiki\n')
         file.close()
     elif arg == "--help":
         print(f"vib {version("vib")}")
