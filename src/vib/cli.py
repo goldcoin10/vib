@@ -12,6 +12,8 @@ def main():
     vibrc: str = f"{str(Path.home())}/.vibrc"
     arg: str | None = None
     arg2: str | None = None
+    if not shutil.which("surf"):
+        raise FileNotFoundError(f"{prog_name}: Surf is not on your system!")
     if not len(sys.argv) < 3:
         arg2 = sys.argv[2]
     if not len(sys.argv) < 2:
@@ -19,8 +21,6 @@ def main():
     else:
         print(f"{prog_name}: No arguments given.")
         sys.exit()
-    if not shutil.which("surf"):
-            raise FileNotFoundError(f"{prog_name}: Surf is not on your system!")
     if arg == "--check-surf":
             print(f"{prog_name}: Surf is installed on your system.")
     elif arg == "--def-rc":
