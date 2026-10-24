@@ -18,6 +18,9 @@ If you have not done anything wrong, Vib is now on your computer.
 ## Usage
 
 --check-surf : checks if the surf browser is in your PATH
+
 --def-rc : overrides your .vibrc to defaults
+
 :yt : prints the URL of the title inserted
+
 check your .vibrc (located at ~/.vibrc) for more details
