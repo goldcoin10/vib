@@ -9,18 +9,16 @@ Firstly, install suckless surf onto your system using your preferred package man
 
 ```$ sudo apt install surf```
 
-Next, you will have to install vib through ```pip```. I will assume your system already has Python on it, so install it and ```pip``` if you have not already.
-
-```$ pip install vib-bl```
+Next, you will have to install vib through [PyPi](https://pypi.org/project/vib-bl/).
 
 If you have not done anything wrong, Vib is now on your computer.
 
 ## Usage
 
---check-surf : checks if the surf browser is in your PATH
+```--check-surf``` checks if the surf browser is in your PATH
 
---def-rc : overrides your .vibrc to defaults
+```--def-rc``` overrides your .vibrc to defaults
 
-:yt : prints the URL of the title inserted
+```:yt``` prints the URL of the title inserted
 
 check your .vibrc (located at ~/.vibrc) for more details
