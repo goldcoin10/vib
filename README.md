@@ -1,4 +1,4 @@
-# Vib: vi-like browsing
+# Vib: vi-like browsing & searching
 
 ## Motive
 When I used normal GUI web browsers, they always felt a little heavy. Chrome had gigabytes of bloat, and Firefox was (and is) still nice for most of my purposes, but when on simpler systems, they felt a little out of place. That's when I discovered [surf](https://surf.suckless.org/) by suckless, and it was good, but I still needed a little bit of customizability. Inspired by Vi keybinds and [DuckDuckGo !bangs](https://duckduckgo.com/bangs), I developed Vib with customizability through the usage of aliases.
@@ -19,6 +19,8 @@ If you have not done anything wrong, Vib is now on your computer.
 
 ```--def-rc``` overrides your .vibrc to defaults
 
-```:yt``` prints the URL of the title inserted
+```:yt``` prints the URL & Title of the YouTube search inserted
+
+```--echo``` only put after the command
 
 check your .vibrc (located at ~/.vibrc) for more details
