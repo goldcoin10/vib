@@ -1,6 +1,6 @@
 [project]
 name = "vib-bl"
-version = "0.1.2b"
+version = "0.1.2"
 description = "vi-like browsing, a wrapper for suckless surf with aliases"
 readme = "README.md"
 requires-python = ">=3.13"

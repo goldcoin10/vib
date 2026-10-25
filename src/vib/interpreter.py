@@ -19,13 +19,15 @@ def interpret(aliases: dict[str, str], replace: str, replace2: str) -> str | Non
             return_me = f"{aliases.get(alias_name)}{replace2}"
     elif replace.startswith(":yt"):
         print(f"{prog_name}: querying yt-dlp...")
+        yt_data = yt_search.find_vid(replace2)
+        print(f"Your query returned: {yt_data[1]}")
         if not replace2:
             raise ValueError(f"{prog_name}: not enough arguments")
-        return_me = yt_search.find_vid(replace2, 0)
+        return_me = yt_data[0]
     else:
         raise ValueError(f"{prog_name}: {replace} is not a valid alias or URL!")
     if config:
         return_me = f"{return_me} -{config}"
-    print(f"Your query returned: \'{return_me}\'")
+    print(return_me)
     return return_me
     
