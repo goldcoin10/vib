@@ -38,7 +38,9 @@ def main():
     elif arg == "--help":
         print(f"vib {version("vib-bl")}")
         print("\t--help : prints this help message")
-        print("\t--check-surf : checks if the surf browser is in your PATH")
+        print("\t--check-surf : checks if the surf browser is i" \
+        "" \
+        "n your PATH")
         print("\t--def-rc : overrides your .vibrc to defaults")
         print("\t:yt : prints the URL of the title inserted")
         print("\t--echo only put after the command")

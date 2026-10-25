@@ -1,11 +1,11 @@
-# Vib: vi-like browsing & searching
+# [Vib](https://github.com/goldcoin10/vib): vi-like browsing & searching
 
 ## Motive
 When I used normal GUI web browsers, they always felt a little heavy. Chrome had gigabytes of bloat, and Firefox was (and is) still nice for most of my purposes, but when on simpler systems, they felt a little out of place. That's when I discovered [surf](https://surf.suckless.org/) by suckless, and it was good, but I still needed a little bit of customizability. Inspired by Vi keybinds and [DuckDuckGo !bangs](https://duckduckgo.com/bangs), I developed Vib with customizability through the usage of aliases.
 
 ## Installation
 
-Firstly, install suckless surf onto your system using your preferred package manager of your choice. In this example, I will be using apt.
+Firstly, install [SUCKLESS surf](https://surf.suckless.org/) onto your system using your preferred package manager of your choice. In this example, I will be using apt.
 
 ```$ sudo apt install surf```
 
@@ -22,5 +22,7 @@ If you have not done anything wrong, Vib is now on your computer.
 ```:yt``` prints the URL & Title of the YouTube search inserted
 
 ```--echo``` only put after the command
+
+btw, aliases declared in .vibrc are used by ```$ vib ::<user-alias>```, ```:``` for those declared in source code
 
 check your .vibrc (located at ~/.vibrc) for more details
