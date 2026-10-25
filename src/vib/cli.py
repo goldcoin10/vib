@@ -36,11 +36,12 @@ def main():
         file.write('# this is a Vib config file\n# (:a for alias, :c for config)\n:a "https://en.wikipedia.org/wiki/" wiki\n:a "https://chess.com" chess\n# :c CookiesDisabled True\n# :c Fullscreen True')
         file.close()
     elif arg == "--help":
-        print(f"vib {version("vib")}")
+        print(f"vib {version("vib-bl")}")
         print("\t--help : prints this help message")
         print("\t--check-surf : checks if the surf browser is in your PATH")
         print("\t--def-rc : overrides your .vibrc to defaults")
         print("\t:yt : prints the URL of the title inserted")
+        print("\t--echo only put after the command")
         print("\tcheck your .vibrc (located at ~/.vibrc) for more details")
     else:
         if not echo_mode:

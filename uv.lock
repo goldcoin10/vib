@@ -4,7 +4,7 @@ requires-python = ">=3.13"
 
 [[package]]
 name = "vib-bl"
-version = "0.1.2b0"
+version = "0.1.4"
 source = { editable = "." }
 dependencies = [
     { name = "yt-dlp" },
