@@ -4,7 +4,7 @@ from urllib.parse import urlparse, quote
 
 from . import prog_name
 
-def interpret(aliases: dict[str, str], replace: str, replace2: str, config_list: dict[str, str]) -> list[str] | None:
+def interpret(aliases: dict[str, str], replace: str, replace2: str, config_list: dict[str, str], echo_mode: bool) -> list[str] | None:
     alias_name = None
     return_me = [None]*2
     config = None
@@ -18,9 +18,10 @@ def interpret(aliases: dict[str, str], replace: str, replace2: str, config_list:
         else:
             return_me[0] = f"{aliases.get(alias_name)}{replace2}"
     elif replace.startswith(":yt"):
-        print(f"{prog_name}: querying yt-dlp...")
         yt_data = yt_search.find_vid(replace2)
-        print(f"Your query returned: {yt_data[1]}")
+        if not echo_mode:
+            print(f"{prog_name}: querying yt-dlp...")
+            print(f"Your query returned: {yt_data[1]}")
         if not replace2:
             raise ValueError(f"{prog_name}: not enough arguments")
         return_me[0] = yt_data[0]

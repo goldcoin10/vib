@@ -69,7 +69,7 @@ def main():
             if arg2 is None:
                 print(f"{prog_name}: there is no second parameter to the alias")
                 sys.exit(1)
-        parms_to_browser = interpreter.interpret(alias_dict, arg, arg2, config_list)
+        parms_to_browser = interpreter.interpret(alias_dict, arg, arg2, config_list, echo_mode)
         print(parms_to_browser[0])
         if not echo_mode:
             if parms_to_browser[1] == None:
